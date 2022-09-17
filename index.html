@@ -253,19 +253,6 @@
 				vm3.hebing()
 			}
 			
-			
-			//方法一：用原生的document.execCommand(‘copy’)的方式实现，移动端和PC端都可以使用
-			//效果：点击复制按钮，复制想复制的区域，例如复制邀请码功能实现
-			//  function handleCopy(){
-			// 	const range = document.createRange(); 创建range对象
-			// 	range.selectNode(document.getElementById('copycode')); //获取复制内容的 id 选择器
-			// 	const selection = window.getSelection();  //创建 selection对象
-			// 	if (selection.rangeCount > 0) selection.removeAllRanges(); //如果页面已经有选取了的话，会自动删除这个选区，没有选区的话，会把这个选取加入选区
-			// 	selection.addRange(range); //将range对象添加到selection选区当中，会高亮文本块
-			// 	document.execCommand('copy'); //复制选中的文字到剪贴板
-			// 	this.$toast('复制成功')
-			// 	selection.removeRange(range); // 移除选中的元素
-			// }
 		</script>
 	</body>
 </html>
