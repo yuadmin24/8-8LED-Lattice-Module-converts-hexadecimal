@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>8*8LED转化</title>
+		<link rel="icon" href="./img/favicon.ico">
+		<link rel="stylesheet" href="./css/style.css">
+		<script src="lib/vue-2.4.0.js"></script>
+	</head>
+	<body>
+		<div class="juzhong">
+			<div class="juzhen">
+				<ul>
+					<li id="li1" @click="on()" class="off"></li>
+					<li id="li2" @click="on()" class="off"></li>
+					<li id="li3" @click="on()" class="off"></li>
+					<li id="li4" @click="on()" class="off"></li>
+					<li id="li5" @click="on()" class="off"></li>
+					<li id="li6" @click="on()" class="off"></li>
+					<li id="li7" @click="on()" class="off"></li>
+					<li id="li8" @click="on()" class="off"></li>
+					<li id="li9" @click="on()" class="off"></li>
+					<li id="li10" @click="on()" class="off"></li>
+					<li id="li11" @click="on()" class="off"></li>
+					<li id="li12" @click="on()" class="off"></li>
+					<li id="li13" @click="on()" class="off"></li>
+					<li id="li14" @click="on()" class="off"></li>
+					<li id="li15" @click="on()" class="off"></li>
+					<li id="li16" @click="on()" class="off"></li>
+					<li id="li17" @click="on()" class="off"></li>
+					<li id="li18" @click="on()" class="off"></li>
+					<li id="li19" @click="on()" class="off"></li>
+					<li id="li20" @click="on()" class="off"></li>
+					<li id="li21" @click="on()" class="off"></li>
+					<li id="li22" @click="on()" class="off"></li>
+					<li id="li23" @click="on()" class="off"></li>
+					<li id="li24" @click="on()" class="off"></li>
+					<li id="li25" @click="on()" class="off"></li>
+					<li id="li26" @click="on()" class="off"></li>
+					<li id="li27" @click="on()" class="off"></li>
+					<li id="li28" @click="on()" class="off"></li>
+					<li id="li29" @click="on()" class="off"></li>
+					<li id="li30" @click="on()" class="off"></li>
+					<li id="li31" @click="on()" class="off"></li>
+					<li id="li32" @click="on()" class="off"></li>
+					<li id="li33" @click="on()" class="off"></li>
+					<li id="li34" @click="on()" class="off"></li>
+					<li id="li35" @click="on()" class="off"></li>
+					<li id="li36" @click="on()" class="off"></li>
+					<li id="li37" @click="on()" class="off"></li>
+					<li id="li38" @click="on()" class="off"></li>
+					<li id="li39" @click="on()" class="off"></li>
+					<li id="li40" @click="on()" class="off"></li>
+					<li id="li41" @click="on()" class="off"></li>
+					<li id="li42" @click="on()" class="off"></li>
+					<li id="li43" @click="on()" class="off"></li>
+					<li id="li44" @click="on()" class="off"></li>
+					<li id="li45" @click="on()" class="off"></li>
+					<li id="li46" @click="on()" class="off"></li>
+					<li id="li47" @click="on()" class="off"></li>
+					<li id="li48" @click="on()" class="off"></li>
+					<li id="li49" @click="on()" class="off"></li>
+					<li id="li50" @click="on()" class="off"></li>
+					<li id="li51" @click="on()" class="off"></li>
+					<li id="li52" @click="on()" class="off"></li>
+					<li id="li53" @click="on()" class="off"></li>
+					<li id="li54" @click="on()" class="off"></li>
+					<li id="li55" @click="on()" class="off"></li>
+					<li id="li56" @click="on()" class="off"></li>
+					<li id="li57" @click="on()" class="off"></li>
+					<li id="li58" @click="on()" class="off"></li>
+					<li id="li59" @click="on()" class="off"></li>
+					<li id="li60" @click="on()" class="off"></li>
+					<li id="li61" @click="on()" class="off"></li>
+					<li id="li62" @click="on()" class="off"></li>
+					<li id="li63" @click="on()" class="off"></li>
+					<li id="li64" @click="on()" class="off"></li>
+				</ul>
+			</div>
+			<div class="cebiankuang">
+				<ul>
+					<li>{{str1}}</li>
+					<li>{{str2}}</li>
+					<li>{{str3}}</li>
+					<li>{{str4}}</li>
+					<li>{{str5}}</li>
+					<li>{{str6}}</li>
+					<li>{{str7}}</li>
+					<li>{{str8}}</li>
+				</ul>
+			</div>
+			<div class="di">
+				<div class="di_left">
+					<input type="text" id="copycode" :value="str1">
+					<!-- <input type="button" class="copy-btn" onclick="handleCopy()" value="复制"> -->
+					<!-- <van-button class="copy-btn" @click="handleCopy">复制</van-button> -->
+				</div>
+				<div class="di_right">
+					<input type="button" value="生成" onclick="qiuhe()">
+				</div>
+			</div>
+		</div>
+		<div class="qingkong">
+			<input type="button" value="清空"  onclick="javascript:location.reload();">
+		</div>
+		<script type="text/javascript">
+			
+			var vm = new Vue({
+			
+			    el : ".juzhong .cebiankuang",    
+			    data : {    
+			        "str1" : "第 1 行转化值", 
+			        "str2" : "第 2 行转化值",
+					"str3" : "第 3 行转化值",
+					"str4" : "第 4 行转化值",
+					"str5" : "第 5 行转化值",
+					"str6" : "第 6 行转化值",
+					"str7" : "第 7 行转化值",
+					"str8" : "第 8 行转化值"
+			    },
+				methods: {
+					qiuhe() {
+						var arr = new Array()
+						var oli=document.getElementsByTagName('li'); 
+						for(var i=0; i<64;i++){
+						 	//oli[i].index=i; 
+							//console.log(this.index+1)
+							var liid = document.getElementById("li"+(i+1))
+							//console.log(liid)
+							if(liid.className === 'off')
+								arr.push('0')
+							else{
+								arr.push('1')
+							}
+		
+						
+						 }
+						console.log(arr)
+						var k1 = 10*10*10*10*10*10*10
+						var he1 = 0
+						 for(var j=0;j<=7;j++){
+							he1 = arr[j] * k1 + he1
+							k1 = k1/10
+						 }
+						 console.log(he1)
+						this.str1 ="0x" + parseInt(he1,2).toString(16)
+						
+						
+						var k2 = 10*10*10*10*10*10*10
+						var he2 = 0
+						 for(var j=8;j<=15;j++){
+							he2 = arr[j] * k2 + he2
+							k2 = k2/10
+						 }
+						 console.log(he2)
+						this.str2 ="0x" + parseInt(he2,2).toString(16)
+						
+						var k3 = 10*10*10*10*10*10*10
+						var he3 = 0
+						 for(var j=16;j<=23;j++){
+							he3 = arr[j] * k3 + he3
+							k3 = k3/10
+						 }
+						 console.log(he3)
+						this.str3 ="0x" + parseInt(he3,2).toString(16)
+						
+						var k4 = 10*10*10*10*10*10*10
+						var he4 = 0
+						 for(var j=24;j<=31;j++){
+							he4 = arr[j] * k4 + he4
+							k4 = k4/10
+						 }
+						 console.log(he4)
+						this.str4 ="0x" + parseInt(he4,2).toString(16)
+						
+						var k5 = 10*10*10*10*10*10*10
+						var he5 = 0
+						 for(var j=32;j<=39;j++){
+							he5 = arr[j] * k5 + he5
+							k5 = k5/10
+						 }
+						 console.log(he5)
+						this.str5 ="0x" + parseInt(he5,2).toString(16)
+						
+						var k6 = 10*10*10*10*10*10*10
+						var he6 = 0
+						 for(var j=40;j<=47;j++){
+							he6 = arr[j] * k6 + he6
+							k6 = k6/10
+						 }
+						 console.log(he6)
+						this.str6 ="0x" + parseInt(he6,2).toString(16)
+						
+						var k7 = 10*10*10*10*10*10*10
+						var he7 = 0
+						 for(var j=48;j<=55;j++){
+							he7 = arr[j] * k7 + he7
+							k7 = k7/10
+						 }
+						 console.log(he7)
+						this.str7 ="0x" + parseInt(he7,2).toString(16)
+						
+						var k8 = 10*10*10*10*10*10*10
+						var he8 = 0
+						 for(var j=56;j<=63;j++){
+							he8 = arr[j] * k8 + he8
+							k8 = k8/10
+						 }
+						 console.log(he8)
+						this.str8 ="0x" + parseInt(he8,2).toString(16)
+						
+					}
+				}
+			
+			});
+			
+			var vm2 = new Vue({
+				el : ".juzhen",
+				data : {},
+				methods: {
+					on() {
+							var oli=document.getElementsByTagName('li');  
+							for(var i=0; i<oli.length;i++)  
+							{     
+								oli[i].index=i;  
+									oli[i].onclick=function(){  
+									var liid = document.getElementById("li"+(this.index+1))
+									console.log(liid)
+									if(liid.className === 'off'){
+										return liid.className = 'on'
+									}else{
+										return liid.className = 'off'
+									}
+									};  
+							}  
+						}
+				}
+			});
+			var vm3 = new Vue({
+			    el : ".di_left",
+				data :{
+					"str1" : "输出结果:"
+				},
+			    methods:{
+			        hebing(){
+						this.str1 ="{" +  vm.str1 + "," +vm.str2 + "," + vm.str3 + "," + vm.str4 + "," + vm.str5 + "," +vm.str6 + "," + vm.str7 + "," + vm.str8 + "}"
+					}
+			    }
+			});
+			
+			function qiuhe() {
+				vm.qiuhe()
+				vm3.hebing()
+			}
+			
+			
+			//方法一：用原生的document.execCommand(‘copy’)的方式实现，移动端和PC端都可以使用
+			//效果：点击复制按钮，复制想复制的区域，例如复制邀请码功能实现
+			//  function handleCopy(){
+			// 	const range = document.createRange(); 创建range对象
+			// 	range.selectNode(document.getElementById('copycode')); //获取复制内容的 id 选择器
+			// 	const selection = window.getSelection();  //创建 selection对象
+			// 	if (selection.rangeCount > 0) selection.removeAllRanges(); //如果页面已经有选取了的话，会自动删除这个选区，没有选区的话，会把这个选取加入选区
+			// 	selection.addRange(range); //将range对象添加到selection选区当中，会高亮文本块
+			// 	document.execCommand('copy'); //复制选中的文字到剪贴板
+			// 	this.$toast('复制成功')
+			// 	selection.removeRange(range); // 移除选中的元素
+			// }
+		</script>
+	</body>
+</html>
